@@ -5,20 +5,27 @@
     </h3>
   </header>
   <p>
-    <strong>Token:</strong>
-    {{ currentUser.accessToken.substring(0, 20) }} ...
-    {{ currentUser.accessToken.substr(currentUser.accessToken.length - 20) }}
+    <strong>Picture:</strong>
+    {{ currentUser.image }}
   </p>
   <p>
     <strong>Email:</strong>
     {{ currentUser.email }}
   </p>
+  <p>
+    <strong>Bio:</strong>
+    {{ currentUser.bio }}
+  </p>
+  <p>
+    <strong>Contact:</strong>
+    {{ currentUser.contact }}
+  </p>
   <strong>Roles:</strong>
-  <ul>
+  <!-- <ul>
     <li *ngFor="let role of currentUser.roles">
       {{ role }}
     </li>
-  </ul>
+  </ul> -->
 </div>
 
 <ng-template #loggedOut>
